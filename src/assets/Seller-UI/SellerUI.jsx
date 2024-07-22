@@ -2,7 +2,7 @@ import React from 'react'
 
 function SellerUI() {
   return (
-    <div>dasdsa</div>
+    <div></div>
   )
 }
 
