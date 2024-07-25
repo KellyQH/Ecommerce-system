@@ -59,8 +59,17 @@ export default function Sidebar() {
   ];
   return <div>
 
-<div class="grid grid-rows-3 grid-flow-col gap-4">
-  <div class="row-span-3 ...">01</div>
+<div class="grid grid-rows-3 grid-flow-col gap-4 text-left">
+  <div class="row-span-3 ...">
+    <ul>
+    {
+        sideBarTab.map((tab)=>{
+          return  <li><a style={{onHover: "cursor"}}>{tab.title}</a></li>
+        })
+    }
+    </ul>
+ 
+  </div>
   {/* <div class="col-span-2 ..."><CarouselDefault /></div> */}
   <div class="row-span-2 col-span-2 ...">
 </div>
