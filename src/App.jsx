@@ -8,8 +8,8 @@ import ProductDetails from './assets/Products/ProductDetails';
 import { createBrowserRouter, RouterProvider, Route, createRoutesFromElements } from 'react-router-dom';
 
 function App() {
-  const [user, setUser] = useState("customer"); // Changed to "customer" for testing
-
+  const [count, setCount] = useState(0)
+  const [user, setUser] = useState("customer");
   const adminRouter = createBrowserRouter([
     {
       path: "/",
